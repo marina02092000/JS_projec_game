@@ -1,0 +1,353 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.voiceMe 
+{
+   width: 100px;
+   height: 40px;
+   margin-top: 80px;
+   /* margin-left: 30%; */
+   float: left;
+   text-align: start;
+   color: palevioletred;
+   
+}
+header
+{
+    text-align: center;
+    margin-bottom: 3%;
+}
+/* Base */
+
+#off {
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  /* transform: translate(-342px, 18px); */
+        color: hsl(0, 0%, 28%);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+    text-transform: uppercase;
+ 
+    margin-left: -450px;
+  
+  
+    padding: 64px;
+    background: linear-gradient(to right, hsl(220, 1%, 41%) 20%, hsl(0, 72%, 29%) 40%, hsl(332, 83%, 63%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 600px;
+    }
+    100% {
+      background-position: 600px;
+    }}
+  /* }
+ #off{
+font-size:40px ;
+font-weight: 800;
+margin-top: 30px;
+margin-right: 0px;
+ text-align: center;
+
+} 
+#off span::first-letter 
+{
+    font-size: 60px;
+    color: olive;
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;} */
+    .all
+    {
+      margin-left: 10px;
+    }
+.itemsone
+{
+    margin: 14px ;
+    float: right;
+    padding: 20px;
+    width:44%;
+    border-radius: 10px;
+    background-color: rgb(148, 206, 222);
+    overflow: hidden;
+    
+}
+
+.itemsone div{
+    float: right;
+    width: 170px;
+    height: 145px;
+    padding:2px ;
+    margin:  6.3px;
+    background-image: url(img/back.jfif);
+    background-size: cover;
+}
+img{
+    width: 100%;
+    height:100% ;
+    border-radius:10px;
+    opacity: 0;
+}
+img:hover{
+    cursor: pointer;
+}
+#AZ
+{
+    margin:-50px 17px 0 17px ;
+    float: right;
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+    border: 2px solid rgba(159, 202, 236, 0.97);
+}
+.items{
+    display: inline-block;
+    width: 80px;
+    height: 42px;
+    font-size: 40px;
+    font-weight: 900;
+    padding:8px ;
+    margin: 5px 30px;
+    text-align: center;
+    color: white;
+
+}
+.items:hover
+{
+    background-color: rgba(22, 100, 163, 0.97);
+    color: white;
+    cursor: pointer;
+}
+.putme
+{
+ margin-left: 10%;
+}
+input{
+    width:350px ;
+    height: 60px;
+    color: steelblue;
+    border: 1px solid rgb(244, 224, 9);
+    font-size: 20px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 40px;
+}
+label{
+    font-size: 22px;
+    font-weight: bold;
+}
+.clear
+{
+    clear: both;
+}
+.score,.putme
+{
+    float: left;
+    margin-right:20%;
+
+}
+
+.score{
+    margin-top: 1%;
+    margin-right: 3%;
+}
+.heart-loader{
+    width: 2%;
+}
+.del
+{
+    width:75px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+
+}
+body{
+    background: url(img/54.png);
+    color: white;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 80vh;
+    
+}
+
+.overlay{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  position: absolute;
+  z-index: 0;
+}
+
+.voiceMe
+{
+    font-size: 20px;
+    margin-left: 11%;
+    margin-top: 1%;
+    padding:  60px 0px;
+    width: 20%;
+}
+.fly
+{
+    position: absolute;
+}
+.FlyME
+{
+  /* animation-name: fly;
+  animation-duration: 5s;
+  animation-delay: .1s; */
+  margin-right: 40px;
+  animation: fly 5s linear infinite;
+  pointer-events: none !important;
+top: 0;
+left: 0;
+transform: translateX(-120%) translateY(-120%) rotateZ(0);
+position: fixed;
+animation-delay: 1s;
+z-index: 999999;
+animation-iteration-count: 1;
+}
+@keyframes fly
+{
+    0%   { left:600px; top:600px;}
+  15%  { left:200px; top:400px;}
+  30%  { left:400px; top:600px;}
+  45%  {left:600px; top:800px;}
+  50%  {left:900px; top:800px;}
+
+  60% { left:1250px; top:800px;}
+  75%   { left:1250px; top:100px;}
+  90%  { left:100px; top:200px;}
+  100% { left:0px; top:0px;}
+}
+
+
+/* }
+@keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-250%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(140vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+} */
+
+.But
+{
+margin-top: 38%;
+ margin-left: 43%;
+    width: 200px;
+    height: 70px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: plum;
+    color: white;
+    font-size: 20px;
+    border: 1px solid plum;
+    font-weight: 800;
+    cursor: pointer;
+
+}
+
+  
+  .But:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    /* right: -20px; */
+    transition: 0.5s;
+  }
+  
+  .But:hover {
+    padding-right: 25px;
+  }
+  
+  .But:hover :after {
+    opacity: 1;
+    right: 0;
+  }
+  .But:active {
+    background-color:rgb(128, 44, 103);
+    color: white;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  #Butid
+  {
+    background-color: rgb(148, 206, 222);
+    color: purple;
+  }
+  #Butid:active
+  {
+    background-color:purple;
+    color: rgba(22, 100, 163, 0.97);
+  }
+
+  #song 
+  {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 90%; 
+    top: 89%;
+    color: white;
+  }
+  .fa-sharp
+  {
+    font-size: 24px;
+    color: white;
+  }
+  #f1 , #f3{
+    margin-right: 70px;
+    transform: translateX(-470%) translateY(-220%) rotateZ(0);
+
+
+  }
+  #f2 , #f4{
+    margin-right: 90px;
+    transform: translateX(-770%) translateY(-421%) rotateZ(20%);
+
+
+  }

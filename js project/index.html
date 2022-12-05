@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D Breakout Game - JavScript</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Germania+One">
+    
+    <style>
+        *{
+            font-family: "Germania One";
+        }
+        #sound{
+            width: 30px;
+            height : 30px;
+            cursor: pointer;
+            position: absolute;
+            top : 465px;
+            left : 15px;
+            margin-left: 480px;
+        }
+        #gameover{
+            position: absolute;
+            width : 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.5);
+            display: none;
+            /* margin-left: 475px; */
+        }
+        #gameover #youlose{
+            margin-left: 35%;
+
+
+        }
+        #youwon{
+            width: 100px;
+            position: absolute;
+            top : 200px;
+            left : 150px;
+            display: none;
+        }
+        #youlose{
+            width:400px;
+            position: absolute;
+            top: 100px;
+            left : 0px;
+            display: none;
+        }
+        #restart{
+            background-color: red;
+            margin-top: 300px;
+            width: 30%;
+            margin-left: 35%;
+            text-align: center;
+            cursor: pointer;
+            font-size: 1.25em;
+            color : #FFF;
+        }
+        #breakout{
+            margin: auto;
+            display: block;
+        }
+        body{
+        background-color: rgb(11, 11, 36);
+        }
+
+         
+    </style>
+</head>
+<body>
+    <div class="sound">
+        <img src="img/SOUND_ON.png" alt="" id="sound">
+    </div>
+    
+    <div id="gameover">
+        <img src="img/youwon.png" alt="" id="youwon">
+        <img src="img/gameover.png" alt="" id="youlose">
+        <button id="restart" >Play Again!</button>
+    </div>
+   
+    <canvas id="breakout" width="400" height="500"></canvas>
+    
+    <script src="component.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
