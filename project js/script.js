@@ -39,7 +39,7 @@ function runAnimation() {
   if (runImageNumber == 11) {
     runImageNumber = 1;
   }
-  boy.src = "images/run (" + runImageNumber + ").png";
+  boy.src = "images/Run (" + runImageNumber + ").png";
   setInterval(function () { boy.style.marginLeft = "200px", 500 })
 
 }
@@ -82,7 +82,7 @@ function jumpAnimation() {
     runImageNumber = 0;
     runAnimationstart();
   }
-  boy.src = "images/jumpAttack (" + jumbImageNumber + ").png";
+  boy.src = "images/JumpAttack (" + jumbImageNumber + ").png";
 
 }
 function jumpAnimationstart() {
